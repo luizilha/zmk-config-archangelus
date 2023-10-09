@@ -1,0 +1,10 @@
+file_format: "1"
+id: archangelus
+name: archangelus
+type: shield
+requires: [seeeduino_xiao]
+features:
+  - keys
+siblings:
+  - archangelus_left
+  - archangelus_right
