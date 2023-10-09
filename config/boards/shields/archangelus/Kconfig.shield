@@ -1,0 +1,7 @@
+config SHIELD_ARCHANGELUS_LEFT
+    def_bool $(shields_list_contains, archangelus_left)
+
+config SHIELD_ARCHANGELUS_RIGHT
+    def_bool $(shields_list_contains, archangelus_right)
+
+   
