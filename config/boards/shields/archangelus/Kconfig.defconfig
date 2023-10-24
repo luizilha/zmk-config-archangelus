@@ -1,7 +1,16 @@
-if SHIELD_ARCHANGELUS
+if SHIELD_ARCHANGELUS_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "archangelus"
+    default "Archangelus"
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
-endif 
+endif
+
+if SHIELD_ARCHANGELUS_LEFT || SHIELD_ARCHANGELUS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
