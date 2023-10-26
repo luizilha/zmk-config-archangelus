@@ -23,28 +23,49 @@
                 };
                 lower_layer {
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans 
-                &trans       &trans       &trans                               &trans   &trans &trans    
+                         &kp EXCL  &kp AT &kp HASH  &kp DLLR &kp PRCNT  &trans &kp BSLH  &trans &kp PLUS     &kp EQUAL
+                         &kp ESC   &trans &trans    &trans   &trans     &trans &kp SLASH &trans &kp QUESTION &kp SEMI
+                                 &trans &trans &trans                   &trans &kp LESS_THAN &kp GREATER_THAN
                                           &trans  &trans &trans &trans
                         >;
                 };
 
                 raise_layer {
                         bindings = <
-   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR 
-   &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH 
-   &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE 
-                        >;
+                         &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &kp UNDER  &kp STAR &kp LPAR &kp RPAR &kp LBRC  &kp RBRC
+                         &kp CARET  &kp TILDE &kp GRAVE &kp SQT  &kp MINUS  &kp LEFT &kp DOWN &kp UP &kp RIGHT  &kp COLON
+                                 &trans &kp RA(KP_COMMA) &trans              &trans &kp KP_COMMA &kp KP_DOT
+                                          &trans  &trans &trans &trans
+                       >;
                 };
 
                 num_layer {
                         bindings = <
-   &lt 3 Q    &kp W       &kp F &kp P &kp G  &kp J &kp KP_N7  &kp KP_N8   &kp KP_N9   &trans   
-   &kp TAB    &kp R &kp S &mt LGUI T &kp D   &kp H &kp KP_N4  &kp KP_N5   &kp KP_N6   &trans
-                 &kp X &kp C &kp V                 &kp KP_N1  &kp KP_N2   &kp KP_N3
-                             &kp TAB &lt 1 SPACE   &kp KP_N0   &kp RET
+                          &lt 3 Q    &kp W       &kp F &kp P &kp G  &kp J &kp KP_N7  &kp KP_N8   &kp KP_N9   &trans   
+                          &kp TAB    &kp R &kp S &mt LGUI T &kp D   &kp H &kp KP_N4  &kp KP_N5   &kp KP_N6   &trans
+                                     &kp X &kp C &kp V                 &kp KP_N1  &kp KP_N2   &kp KP_N3
+                                       &kp TAB &lt 1 SPACE   &kp KP_N0   &kp RET
                         >;
                 };
         };
 };
+
+
+
+    [1] = LAYOUT_ortho_3x10(
+		S(KC_BSLS), S(KC_7),   KC_LBRC, KC_RBRC, S(KC_MINS),  KC_PAST, S(KC_9), S(KC_0), S(KC_LBRC), S(KC_RBRC),
+		S(KC_6),    S(KC_GRV), KC_GRV,  KC_QUOT, KC_PMNS,     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,    S(KC_SCLN),
+		_______, _______, RALT(KC_COMM), _______,  _______, _______, _______, KC_COMM, KC_DOT, _______
+    ),
+
+	[2] = LAYOUT_ortho_3x10(
+		S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5), KC_BTN1, KC_BSLS, _______,   S(KC_EQL),  KC_PEQL,
+		KC_ESC,  _______, KC_PGUP, KC_WH_U, TG(3),   KC_BTN2, KC_SLSH, _______,   S(KC_SLSH), KC_SCLN,
+		QK_BOOT, _______, KC_PGDN, KC_WH_D, _______, KC_DEL,  _______, S(KC_COMM),S(KC_DOT), _______
+	),
+
+	[3] = LAYOUT_ortho_3x10(
+		TG(3),   KC_Q, KC_W, KC_E, KC_R,    _______,  KC_7,  KC_8, KC_9, _______,
+		KC_TAB,  KC_A, KC_S, KC_D, KC_WH_U, KC_F,    KC_4,  KC_5, KC_6, _______,
+		KC_LSFT, KC_F11, _______, _______,  KC_WH_D, KC_0, KC_1,  KC_2, KC_3, _______
+	)
