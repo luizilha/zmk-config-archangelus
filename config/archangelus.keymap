@@ -15,7 +15,7 @@
 
                 default_layer {
                         bindings = <
-   &lt 3 Q       &out OUT_BLE &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp Z   
+   &lt 3 Q       &kp W &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp Z   
    &mt LSHFT A   &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &kp E     &mt RCTRL I   &mt RSHFT O
                  &kp X   &kp C   &kp V                    &kp M  &kp B     &kp K 
                               &kp TAB &lt 1 SPACE      &lt 2 BSPC  &kp RET
@@ -42,8 +42,8 @@
                 num_layer {
                         bindings = <
                           &lt 3 Q    &kp W       &kp F &kp P &kp G  &kp J &kp KP_N7  &kp KP_N8   &kp KP_N9   &trans   
-                          &kp TAB    &kp R &kp S &mt LGUI T &kp D   &kp H &kp KP_N4  &kp KP_N5   &kp KP_N6   &trans
-                                     &kp X &kp C &kp V                 &kp KP_N1  &kp KP_N2   &kp KP_N3
+                          &kp TAB    &kp R &kp S &kp K_SCROLL_UP &kp D   &kp H &kp KP_N4  &kp KP_N5   &kp KP_N6   &trans
+                                     &kp X &kp C &kp K_SCROLL_DOWN                 &kp KP_N1  &kp KP_N2   &kp KP_N3
                                        &kp TAB &lt 1 SPACE   &kp KP_N0   &kp RET
                         >;
                 };
