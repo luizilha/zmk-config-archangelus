@@ -40,7 +40,7 @@
                         bindings = < 
                          &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &kp UNDER  &kp STAR &kp LPAR &kp RPAR &kp LBRC  &kp RBRC
                          &kp CARET  &kp TILDE &kp GRAVE &kp SQT  &kp MINUS  &kp LEFT &kp DOWN &kp UP &kp RIGHT  &kp COLON
-                                 &trans &kp RA(COMMA) &trans              &trans &kp COMMA &kp DOT
+                                 &trans &kp RA(COMMA) &trans                &kp COLON &kp COMMA &kp DOT
                                           &trans  &trans &trans &trans
                        >;
                 };
