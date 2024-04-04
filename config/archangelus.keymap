@@ -23,7 +23,7 @@
           };
           combo_ent {
               timeout-ms = <50>;
-              key-positions = <18 19>;
+              key-positions = <17 18>;
               bindings = <&kp RET>;
           };
           combo_esc {
@@ -33,7 +33,7 @@
           };
           combo_tab {
               timeout-ms = <50>;
-              key-positions = <10 11>;
+              key-positions = <11 12>;
               bindings = <&kp TAB>;
           };
           combo_spc {
