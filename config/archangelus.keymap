@@ -21,20 +21,10 @@
               key-positions = <16 17>;
               bindings = <&kp BSPC>;
           };
-          combo_ent {
-              timeout-ms = <50>;
-              key-positions = <17 18>;
-              bindings = <&kp RET>;
-          };
           combo_esc {
               timeout-ms = <50>;
               key-positions = <1 2>;
               bindings = <&kp ESC>;
-          };
-          combo_tab {
-              timeout-ms = <50>;
-              key-positions = <11 12>;
-              bindings = <&kp TAB>;
           };
           combo_spc {
               timeout-ms = <50>;
@@ -55,8 +45,7 @@
                         bindings = <
                            &lt 3 Q  &kp W        &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp Z   
                            &lt 1 A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &kp E     &mt RCTRL I   &lt 2 O
-                           &kp TAB  &mt LSHFT X  &kp C   &kp V  &kp SPACE   &kp BSPC  &kp M &kp B  &mt RSHFT K   &kp RET
-                        
+                           &mt LSHFT TAB  &kp X  &kp C   &kp V  &kp SPACE   &kp BSPC  &kp M &kp B  &kp K &mt RSHFT RET
                         >;
                 };
                 lower_layer {
